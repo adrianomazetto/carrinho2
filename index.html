@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Carrinho</h1>
+        <div class="cart">
+            <div class="cart-item">
+                <img src="cheese_santorini.jpg" alt="IX Cheese Santorini">
+                <span class="item-name">IX Cheese Santorini</span>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="decreaseQuantity(0)">-</button>
+                    <span id="quantity-0" class="quantity">1</span>
+                    <button class="quantity-btn" onclick="increaseQuantity(0)">+</button>
+                </div>
+                <span id="price-0" class="item-price">R$ 41,00</span>
+            </div>
+            <div class="cart-item">
+                <img src="fettucine.jpg" alt="IX Fettucine ao Pomodoro">
+                <span class="item-name">IX Fettucine ao Pomodoro</span>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="decreaseQuantity(1)">-</button>
+                    <span id="quantity-1" class="quantity">1</span>
+                    <button class="quantity-btn" onclick="increaseQuantity(1)">+</button>
+                </div>
+                <span id="price-1" class="item-price">R$ 49,90</span>
+            </div>
+            <div class="cart-item">
+                <img src="clericot.jpg" alt="IX Clericot Tripoli">
+                <span class="item-name">IX Clericot Tripoli</span>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="decreaseQuantity(2)">-</button>
+                    <span id="quantity-2" class="quantity">1</span>
+                    <button class="quantity-btn" onclick="increaseQuantity(2)">+</button>
+                </div>
+                <span id="price-2" class="item-price">R$ 39,90</span>
+            </div>
+            <div class="cart-item">
+                <img src="brownie.jpg" alt="Brownie de Palmira">
+                <span class="item-name">Brownie de Palmira</span>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="decreaseQuantity(3)">-</button>
+                    <span id="quantity-3" class="quantity">1</span>
+                    <button class="quantity-btn" onclick="increaseQuantity(3)">+</button>
+                </div>
+                <span id="price-3" class="item-price">R$ 10,90</span>
+            </div>
+
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="total-price">R$ 141,70</span>
+            </div>
+
+            <div class="buttons">
+              <button class="quantity-btn" onclick="goBack()">Voltar</button>
+              <button class="quantity-btn" onclick="payNow()">Pagar Agora</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
